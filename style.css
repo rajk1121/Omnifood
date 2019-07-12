@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container,#container5 {
+  background-image: url(./images/carrots-cucumber-delicious-1640777.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h2{
+    font-weight: normal;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2:after{
+    background-color: brown;
+    width: 10%;
+    display: block;
+    height: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 45%;
+    content: "";
+}
+
+.color{
+        height: 100vh;
+ background: rgba(0, 0, 0, 0.6);
+}
+ul{
+display: flex;
+    font-family:Lato, Arial, Helvetica, sans-serif;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+#link{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+      }
+
+li:after {
+  display:block;
+  content: '';
+ background-color: cyan;
+ height: 2px;
+  transform: scaleX(0); 
+  transition:transform 0.25s;
+}
+li:hover:after {
+  transform: scale(1);
+}
+
+#text1{
+    color: WHITE;
+    font-family: Lato,Arial, Helvetica, sans-serif;
+    margin-top: 20vh;
+    margin-left: 15vw;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+li{
+    text-align: center;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    text-decoration: none;
+    
+}
+
+#b1:link,#b1:visited{
+    border-radius: 5cm;
+    font-family: Lato ,Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-right: 3vw;
+      background-color: #27ae60;
+    border-style: solid;
+     border-radius: 5cm;
+    font-size: 2rem;
+    color: white;
+    border-color: #27ae60;   
+    padding: 0rem 2rem 0rem 2rem;
+    transition: color .2s , background-color .2s , transform .2s,margin .2s;
+}
+#b2:link,#b2:visited{
+    font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5cm;
+    display: inline-block;
+    text-decoration: none;
+    color: cyan;
+    border-color: aqua;
+      border-radius: 5cm;
+    border-style: solid;
+    font-size: 2rem;
+    text-decoration: none;
+     padding: 0rem 2rem 0rem 2rem;
+        transition: color .2s , background-color .2s , transform .2s,margin .2s;
+
+}
+#b1:hover,#b1:active{
+    transform: scale(1.15);
+    background-color: green;
+    border-color:green;
+   margin-right: 4vw;
+}
+#b2:hover,#b2:active{
+    transform: scale(1.15);
+    color: white;
+    background-color: cyan;
+    }
+
+#logo{
+    height: 20vh;
+    width: 20vw;
+    margin: 1rem;
+    float: left;
+}
+#buttons{
+    display: flex;
+    margin-left: 14vw;
+    }
+
+#footer{
+    display: flex;
+    width: 100%;
+   
+}
+footer{
+    background-color: rgba(70, 0, 0, 0.9);
+    text-align: center;
+}
+#copy{
+        font-size: 2rem;
+        margin-top: 1rem;
+        color: aliceblue;
+        font-family: Lato , Georgia, 'Times New Roman', Times, serif;
+
+}
+#quotes{
+    font-style: italic;
+    color: darkorange;
+    font-size: 1.25rem;
+
+}
+#quotes>p{
+    color: green;
+    text-align: right
+}
+#address,#quotes,#contact{
+    width: 30%;
+    margin:2vmin;
+    text-align: center;
+    margin-top: 4rem;
+}
+#address h3,#contact h3{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: Lato,Arial, Helvetica, sans-serif;
+}
+#address p,#contact p{
+    line-height: 1cm;
+    font-family: Lato,Arial, Helvetica, sans-serif;
+    color: wheat;
+}
+#contact a{
+    text-decoration: none;
+    color: wheat;
+    
+}
+#insta,#fb,#call{
+    height: 30px;
+    width: 30px;
+}
+#container2,#container4,#container6,#container7,#pizzcol{
+    padding: 3rem 1rem;
+}
+
+#container2{
+ height: 700px;
+}
+#container4{
+    height: 100vh;
+}
+#container3{
+    padding: 7rem;
+    background-color: wheat;
+    margin-bottom: 0rem;
+
+}
+#getfood{
+    margin: 2rem;
+    font-family: Lato,Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#text3{
+    text-align: center;
+    font-family:Lato, Arial, Helvetica, sans-serif;
+    margin: 0 8vw 0 8vw;
+}
+#cols1{
+    display: flex;
+}
+#cols1 div{
+    margin: 1rem 1rem;
+    line-height: 0.5cm;
+    text-align: center;
+    width: 25vw;
+    font-family:Lato, Arial, Helvetica, sans-serif
+}
+i{
+    color:tomato;
+    margin: 2rem 0 1rem 0.75rem;
+}
+
+    
+#count,#content{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+
+}
+#two{
+    margin-top: 2rem;
+    height: 25%;
+    
+}
+#content{
+    margin-top: 5%;
+    text-align: left;
+}
+#count{
+    border-style: solid;
+    float: left;
+    border-radius:50%;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-width: 0.05cm;
+    border-color: whitesmoke
+}
+#line1,#line2,#line3{
+    margin-top: 2rem;
+    display: flex;
+    margin-right: 5rem;
+}
+#image{
+    display: flex;
+    margin: 3rem;
+  
+}
+#google{
+    height: 60px;
+    width: 150px
+    
+}
+#apple{
+    margin-top: 8px;
+    height:42px;
+        width: 150px
+}
+
+#iphone{
+    margin-right: 2rem;
+ width: 16.9vw;
+    margin: 1.5rem 0 0rem 12rem;
+  height: 70vh;
+}
+
+
+#citycont{
+    display: flex;
+    margin: 5rem 3rem 2rem 4rem;
+}
+#city1,#city2,#city3,#city4{
+    width: 20%;
+    margin-left: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#london,#sc,#berlin,#lisbon{
+    width: 15vw;
+    height: 20vh;
+}
+#c1{
+    font-size: 20px;
+    line-height: 1cm;
+}
+#c2,#c3,#c4{
+    line-height:0.7cm;
+    display: inline
+}
+#c4 a:link,#c4 a:visited{
+    text-decoration: none;
+    color: indianred;
+    transition: transform 0.2s;
+    display:inline-block;
+}
+#c4 a:hover,#c4 a:active{
+    
+    transform: scale(1.1);
+}
+
+section{
+    text-align: left;
+}
+#city_i{
+    margin: 0;
+}
+#container5{
+    background-image: url(./images/pizza.jpg);
+   color: white;
+
+}
+#pizzcol{
+background-color: rgb(0,0,0,0.6);
+}
+
+#revcont{
+    display: flex;   
+}
+#rev1,#rev2,#rev3{
+    font-style: italic;
+    font-size: 1.7rem;
+    width: 29vw;
+    margin: 3rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#quote:before{
+  font-size: 9rem;
+    content: "\201C";
+    float: left;
+}
+#anna,#it,#exo{
+    margin-top: 1rem;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+#container6{
+
+    background-color: rgb(224,224,2244,0.4);
+}
+
+#signcont{
+    display: flex;
+}
+#sign1,#sign2,#sign3{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30vw;
+    background-color: white;
+    margin: 0 2rem;
+    border-radius: 25px;
+}
+#sign3{
+    height:100%;
+}
+#sign1-head{
+    text-decoration: none;
+    margin: 1rem;
+}
+#price{
+    font-size: 3rem;
+    margin: 1rem;
+    color: lightgreen;
+}
+#month{
+     color: lightgreen;
+}
+#sline1{
+    margin-left: 1rem;
+    margin-top: 0.2rem; 
+}
+#linecont{
+    line-height: 1.25cm;
+}
+#si{
+    margin: 0 0 0 1rem;
+}
+
+#signbtn:link , #signbtn:visited{
+        text-align: center;
+    border-radius: 60px;
+    border-style: solid;
+    border-color: #27ae60;
+    padding: 1rem;
+    display: block;
+    color:#27ae60;
+    margin: 2rem 2rem 1rem 2rem;
+   
+    margin-bottom: 2rem;
+    text-decoration: none;
+    transition: background-color 0.2s , color 0.2s;
+}
+#signbtn:hover,#signbtn:active{
+    background-color: #27ae60;
+    color: white;
+}
+#signbtn1:link,#signbtn1:visited{
+      text-align: center;
+    border-radius: 60px;
+    border-style: solid;
+    border-color: #2ecc71;
+    padding: 1rem;
+    display: block;
+    color:whitesmoke;
+    margin: 2rem 2rem 1rem 2rem;
+   background-color: #2ecc71;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    transition: background-color 0.2s , color 0.2s;
+}
+#signbtn1:hover,#signbtn1:active{
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+#formcont{
+    margin-left: 25%;
+}
+form p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 2rem;
+   
+}
+#drop *{
+    vertical-align: top;
+}
+
+#name,#email,#found{
+    height: 50px;
+    width: 50%;
+}
+#name{
+margin-left: 20%;
+}
+#email{
+margin-left: 20.3%;
+}
+#found{
+margin-left: 7.2%;
+}
+#drop-line{
+margin-left: 12.5%;
+ height: 100px;
+    width: 50%; 
+}
+#news{
+    margin-left: 15.5%;
+}
+#submit{
+margin-left: 25%;
+margin-top: 6%;
+padding:0% 2%;
+font-size: 30px;
+border-radius: 5px;
+background-color: #27ae60;
+color: white;
+border-color: #27ae60;
+transition: background-color 0.2s,border-color 0.2s;
+}
+#submit:hover{
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+footer{
+    background-color: #2f3640;
+}
+#nav{
+    display: flex;
+}
+#more{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5rem;
+}
+#more a{
+    text-decoration: none;
+    color: black;
+    
+    margin: 1rem;
+}
+#social-media{
+    display: flex;
+        width: 61vw;
+    justify-content: flex-end;
+ 
+}
+#social-media i{
+    color: gray;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    margin-right:2rem; 
+}
