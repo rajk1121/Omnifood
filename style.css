@@ -36,10 +36,7 @@ h2:after{
     margin-left: 45%;
     content: "";
 }
-#top{
-    /* position: fixed; */
-   margin-left:34rem;
-}
+
 ul{
     display: flex;
     font-family:Lato, Arial, Helvetica, sans-serif;
@@ -141,7 +138,7 @@ li{
 
 #copy{
         font-size: 1rem;
-        
+        padding: 2vh;
         color: aliceblue;
         font-family: Lato , Georgia, 'Times New Roman', Times, serif;
 
@@ -399,12 +396,14 @@ form p{
 #drop *{
     vertical-align: top;
 }
-
+#x{
+    display: flex;
+}
 #name,#email,#found{
     height: 50px;
     width: 50%;
 }
-#name{
+/* #name{
 margin-left: 20%;
 }
 #email{
@@ -412,15 +411,22 @@ margin-left: 20.3%;
 }
 #found{
 margin-left: 7.2%;
-}
+}*/
 #drop-line{
-margin-left: 12.5%;
+margin-left: 10.5vw;
  height: 100px;
     width: 50%; 
+} 
+label{
+    display: inline-block;
+    width: 15vw;
 }
-#news{
+#name,#email,#found,#news{
+    margin-left: 10vw;
+}
+/* #news{
     margin-left: 15.5%;
-}
+} */
 #submit{
 margin-left: 25%;
 margin-top: 6%;
@@ -459,11 +465,16 @@ footer{
     display: flex;
         width: 61vw;
     justify-content: flex-end;
+    
  
 }
 #social-media i{
-    color: gray;
+    color: black;
     font-size: 1.5rem;
     justify-content: flex-end;
-    margin-right:2rem; 
+    margin-right:1.5rem;
+    transition: color 0.2s; 
+}
+#social-media i:hover{
+    color:deeppink;
 }
