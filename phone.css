@@ -73,7 +73,7 @@ width: 100%;
        padding: 0 2rem;
    }
    #sign1,#sign2,#sign3{
-       margin: 6% 0;
+       margin: 6% -10%;
        width: 20rem;
    }
    #image{
@@ -87,7 +87,7 @@ width: 100%;
    #london, #sc, #berlin, #lisbon{
        height: 10rem;
        width: 20rem;
-       padding-left:30px
+       padding-right:20px;
    }
    #city1, #city2, #city3, #city4 {
        padding-left: 1rem;
