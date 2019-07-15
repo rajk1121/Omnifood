@@ -24,6 +24,7 @@ html{
 h2{
     font-weight: normal;
     text-align: center;
+    /* margin-top: 3rem; */
     font-family: Arial, Helvetica, sans-serif;
 }
 h2:after{
@@ -41,14 +42,22 @@ ul{
     display: flex;
     font-family:Lato, Arial, Helvetica, sans-serif;
     list-style: none;
+    /* position: fixed; */
     justify-content: flex-end;
+    /* right: 0; */
+    /* top: -0.5rem; */
+    /* background-color: #fff; */
+    /* width: 100%;
+    height: 70px;
+    z-index: 1000; */
+   
 }
 
 #link{
     text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 1.5rem;
       }
 
@@ -63,11 +72,35 @@ ul{
 #link:hover:after {
   transform: scale(1);
 }
+.b{
+    background-color: pink;
+            width : 100%;
+            height: 13%;
+            position: fixed;
+            z-index: 100000;
+            
+}
 
+
+.a{
+color: pink;
+/* margin-top: / */
+}
+.logo{
+    width: 10%;
+    margin: 2rem 4rem;
+    float: left;
+}
+.c{
+   margin: 1rem;
+   width: 5%;
+   float: left;
+    /* clear: both; */
+}
 #text1{
     color: WHITE;
     font-family: Lato,Arial, Helvetica, sans-serif;
-    padding-top: 21vh;
+    padding-top: 13%;
     margin-left: 15vw;
     margin-bottom: 2rem;
     font-size: 2.5rem;
@@ -124,15 +157,9 @@ li{
     background-color: cyan;
     }
 
-#logo{
-    width: 10%;
-    margin: 2rem 4rem;
-    float: left;
-    /* clear: both; */
-}
 #buttons{
     display: flex;
-    margin-left: 14vw;
+    margin-left: 15%;
     }
 
 
@@ -144,17 +171,18 @@ li{
 
 }
 #container2,#container4,#container6,#container7,#pizzcol{
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
 }
 
+
 #container2{
- height: 700px;
+ height: 70%;
 }
 #container4{
     height: 100vh;
 }
 #container3{
-    padding: 7rem;
+    padding: 4rem 7rem;
     background-color: wheat;
     margin-bottom: 0rem;
 
@@ -171,6 +199,11 @@ li{
 }
 #cols1{
     display: flex;
+    /* position: relative; */
+    
+}
+#col1,#col2,#col3,#col4{
+    opacity: 0;
 }
 #cols1 div{
     margin: 1rem 1rem;
@@ -193,6 +226,7 @@ i{
 #two{
     margin-top: 2rem;
     height: 25%;
+    width: 95%;
     
 }
 #content{
@@ -235,25 +269,31 @@ i{
 }
 
 #iphone{
-    margin-right: 2rem;
+   
  width: 16.9vw;
-    margin: 1.5rem 0 0rem 12rem;
+    margin: 1.5rem 4rem 0rem 12rem;
   height: 70vh;
+  opacity: 0;
+}
+.delay{
+    animation-delay: 0.5s;
 }
 
 
 #citycont{
     display: flex;
     margin: 5rem 3rem 2rem 4rem;
+   
 }
 #city1,#city2,#city3,#city4{
     width: 20%;
+     opacity: 0;
     margin-left: 3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 #london,#sc,#berlin,#lisbon{
-    width: 15vw;
-    height: 20vh;
+    width: 20vw;
+    height: 25vh;
 }
 #c1{
     font-size: 20px;
@@ -296,6 +336,7 @@ background-color: rgb(0,0,0,0.6);
     font-style: italic;
     font-size: 1.7rem;
     width: 29vw;
+    opacity: 0;
     margin: 3rem;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
@@ -321,8 +362,17 @@ background-color: rgb(0,0,0,0.6);
     margin: 0 2rem;
     border-radius: 25px;
 }
+#sign1{
+animation-delay: 0.2s;
+}
+#sign2{
+animation-delay: 0.3s;
+
+}
+
 #sign3{
     height:100%;
+animation-delay: 0.8s;
 }
 #sign1-head{
     text-decoration: none;
@@ -456,10 +506,16 @@ footer{
     margin-left: 5rem;
     padding-top: 1.5rem;
 }
+
 #more a{
     text-decoration: none;
     color: black;
     margin: 0.5rem;
+    transition: color 0.2s;
+}
+#more a:hover{
+    color: white;
+
 }
 #social-media{
     display: flex;

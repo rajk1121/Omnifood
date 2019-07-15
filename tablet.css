@@ -1,7 +1,5 @@
 @media only screen and (max-width:768px){
-    ul{
-        margin-right: 2rem;
-    }
+    
     .container{
         height: 600px;
     }

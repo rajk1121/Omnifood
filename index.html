@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="phone.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Bon Apetite</title>
@@ -17,26 +19,28 @@
 <body>
     <div class="container">
 
-        <img id="logo" src="./images/logo.png">
+
         <nav id="top">
+            <img class="logo" src="./images/logo.png">
             <ul>
+
                 <li>
-                    <a href="#getfood" id="link">
+                    <a href="#container2" id="link">
                         FOOD DELIVERY
                     </a>
                 </li>
                 <li>
-                    <a href="#how" id="link">
+                    <a href="#container3" id="link">
                         HOW IT WORKS
                     </a>
                 </li>
                 <li>
-                    <a href="#city" id="link">
+                    <a href="#container4" id="link">
                         OUR CITIES
                     </a>
                 </li>
                 <li>
-                    <a href="#signup" id="link">
+                    <a href="#container6" id="link">
                         SIGN UP
                     </a>
                 </li>
@@ -67,8 +71,8 @@
             We know you're always busy. No time for coookong. So let
             us take care of that.We're really good at it. we promise.
         </p>
-        <div id="cols1">
-            <div>
+        <div class="delay" id="cols1">
+            <div id="col1">
                 <i class="fa fa-5x fa-calendar"></i>
                 <h3>
                     UPTO 365 DAYS/YEAR
@@ -81,7 +85,7 @@
                     your style.
                 </p>
             </div>
-            <div>
+            <div id="col2">
                 <i class="fa fa-5x fa-truck"></i>
                 <h3>
                     READY IN 20 MINUTES
@@ -94,7 +98,7 @@
                     that yu're 100% happy
                 </p>
             </div>
-            <div>
+            <div id="col3">
                 <i class="fa fa-5x fa-carrot"></i>
                 <h3>
                     100% ORGANIC
@@ -107,7 +111,7 @@
                 </p>
 
             </div>
-            <div>
+            <div id="col4">
                 <i class="fas fa-5x fa-boxes"></i>
                 <h3>
                     ORDER ANYTHING
@@ -122,6 +126,7 @@
             </div>
 
         </div>
+
     </div>
     <!-- Choose the subscription plan that best suits your
     needs and sign up today.
@@ -462,7 +467,10 @@
             Copyright &copy; 2019 Omnifood. All rights rserved.
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
+    <script src="./js/query.js"></script>
 </body>
 
 </html>
