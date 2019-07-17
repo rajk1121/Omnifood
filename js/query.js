@@ -1,5 +1,6 @@
 var $window = $(window);
 var iphone = $('#iphone');
+var nav = $('#top');
 var col1 = $('#col1');
 var container2 = $("#container2");
 var col2 = $('#col2');
@@ -26,6 +27,74 @@ function isScrolledIntoView(elem, $window) {
 
     return ((elemTop >= docViewTop) && (elemBottom <= docViewBottom));
 }
+$window.resize(function () {
+    if ($window.width() <= 751) {
+        nav.addClass("navbar navbar-expand-md bg-dark navbar-dark");
+        document.getElementById("top").innerHTML = `     
+     <img class="logo logo2" src="./images/logo.png">
+    <button class="navbar-toggler btn btn-primary" type="button" data-target="#ul" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" collapse navbar-collapse" id="ul">
+        <ul class="navbar-nav">
+
+            <li class=" nav-item">
+                <a class="nav-link" href="#container2" id="link">
+                    FOOD DELIVERY
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a class="nav-link" href="#container3" id="link">
+                    HOW IT WORKS
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a class="nav-link" href="#container4" id="link">
+                    OUR CITIES
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a class="nav-link" href="#container6" id="link">
+                    SIGN UP
+                </a>
+            </li>
+        </ul>
+    </div>
+`;
+
+
+    } else {
+        nav.removeClass("navbar navbar-expand-md bg-dark navbar-dark");
+        document.getElementById("top").innerHTML = `    
+            <img class="logo" src="./images/logo.png">
+            <ul>
+
+                <li>
+                    <a href="#container2" id="link">
+                        FOOD DELIVERY
+                    </a>
+                </li>
+                <li>
+                    <a href="#container3" id="link">
+                        HOW IT WORKS
+                    </a>
+                </li>
+                <li>
+                    <a href="#container4" id="link">
+                        OUR CITIES
+                    </a>
+                </li>
+                <li>
+                    <a href="#container6" id="link">
+                        SIGN UP
+                    </a>
+                </li>
+            </ul>
+        `;
+
+
+    }
+});
 $(document).on("scroll", function () {
     var propertyObject = {
         'fontsize': '500px', 'left': '200px'
