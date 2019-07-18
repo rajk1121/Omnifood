@@ -17,10 +17,11 @@
 }   
 
 .sidenav {
+    z-index:  450000000;
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: ;
   top: 0;
   left: 0;
   background-color: #111;
