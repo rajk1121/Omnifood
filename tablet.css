@@ -21,7 +21,10 @@
 }
 
 .sidenav {
-    z-index:  450000000;
+
+    display: inline-block;
+
+    z-index:  450000000 !important;
   height: 100%;
   width: 0;
   position: fixed;
@@ -65,9 +68,7 @@
      width: 100%;
     background-color: pink;;
 }
-.sidenav{
-    display: block;
-}
+
 .sidenav a:hover {
   color: #f1f1f1;
 }
