@@ -110,6 +110,7 @@ $(document).on("scroll", function () {
         var ul = $("#top");
         var logo = $(".logo");
 
+        var collapse = $(".normal");
 
         // ul.css({
         //     "background-color": "black",
@@ -128,7 +129,7 @@ $(document).on("scroll", function () {
         ul.addClass("b");
         link.addClass("a");
         logo.addClass("c");
-
+        collapse.addClass("collapse");
 
         // ul.setAttribute("style", "background-color:white", "width:100%");
         // link.setAttribute("style", "color:black");
@@ -139,7 +140,10 @@ $(document).on("scroll", function () {
         var link = $('#link');
         link.removeClass("a");
         var logo = $(".logo");
-        logo.removeClass("c")
+        logo.removeClass("c");
+
+        var collapse = $(".normal");
+        collapse.removeClass("collapse");
 
     }
 

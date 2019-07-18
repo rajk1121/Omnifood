@@ -38,9 +38,24 @@
 }
 
 .opn-btn{
-    display: block;
+    display: inline-block;
+    
+   
     /* margin-left: 2rem; */
 }
+
+.opn-btn-fixed{
+    position: fixed;
+    /* background-color: pink; */
+
+}
+.collapse{
+    position: fixed;
+    z-index: 45000000;
+     background-color: pink;
+     width: 100%;
+}
+
 .sidenav{
     display: block;
 }
@@ -154,8 +169,15 @@ transition: transform 0.5s;
     }
   #line1, #line2, #line3 {
     margin-top: 1rem;
-    margin-right: 3rem;
+    padding-right: 0;
+    /* margin-right: 3rem; */
    }
+   .logo-md{
+    display: inline-block;
+    float: right;
+    width: 15%;
+    margin-right: 5%;
+}
    label{
        display: block;
        width: 100%;

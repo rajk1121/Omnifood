@@ -42,7 +42,27 @@
 }
 
 .opn-btn{
-    display: block;
+    display: inline-block;
+}
+
+
+.opn-btn-fixed{
+    position: fixed;
+    /* background-color: pink; */
+    /* width: 100%; */
+}
+.logo-md{
+    display: inline-block;
+    float: right;
+    width: 15%;
+    margin-right: 5%;
+}
+.collapse{
+    z-index: 45000000;
+    position: fixed;
+    
+     width: 100%;
+    background-color: pink;;
 }
 .sidenav{
     display: block;

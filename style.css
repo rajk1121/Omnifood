@@ -20,9 +20,17 @@ html{
 .sidenav{
     display: none;
 }
-
+.collapse{
+    z-index: 45000000;
+    position: fixed;
+}
 .opn-btn{
     display: none;
+}
+.opn-btn-fixed{
+    position: fixed;
+    /* background-color: pink; */
+    /* width: 100%; */
 }
 /* .sidenav{
     height: 100%;
@@ -60,6 +68,9 @@ html{
     width: 100%;
     height: 10.5%;
 } */
+.logo-md{
+    display: none;
+}
 #container{
     background-image:url(./images/carrots-cucumber-delicious-1640777.jpg);
  
@@ -122,7 +133,7 @@ ul{
             width : 100%;
             height: 13%;
             position: fixed;
-            z-index: 100000;
+            z-index: 1000;
             
 }
 
