@@ -16,6 +16,10 @@ var sign3 = $('#sign3');
 var rev1 = $("#rev1");
 var rev2 = $("#rev2");
 var rev3 = $("#rev3");
+var s1 = false;
+var s2 = false;
+var s3 = false;
+
 
 function isScrolledIntoView(elem, $window) {
     var docViewTop = $window.scrollTop();
@@ -27,74 +31,6 @@ function isScrolledIntoView(elem, $window) {
 
     return ((elemTop >= docViewTop) && (elemBottom <= docViewBottom));
 }
-// $window.resize(function () {
-//     if ($window.width() <= 751) {
-//         nav.addClass("navbar navbar-expand-md bg-dark navbar-dark");
-//         document.getElementById("top").innerHTML = `     
-//      <img class="logo logo2" src="./images/logo.png">
-//     <button class="navbar-toggler btn btn-primary" type="button" data-target="#ul" data-toggle="collapse">
-//         <span class="navbar-toggler-icon"></span>
-//     </button>
-//     <div class=" collapse navbar-collapse" id="ul">
-//         <ul class="navbar-nav">
-
-//             <li class=" nav-item">
-//                 <a class="nav-link" href="#container2" id="link">
-//                     FOOD DELIVERY
-//                 </a>
-//             </li>
-//             <li class=" nav-item">
-//                 <a class="nav-link" href="#container3" id="link">
-//                     HOW IT WORKS
-//                 </a>
-//             </li>
-//             <li class=" nav-item">
-//                 <a class="nav-link" href="#container4" id="link">
-//                     OUR CITIES
-//                 </a>
-//             </li>
-//             <li class=" nav-item">
-//                 <a class="nav-link" href="#container6" id="link">
-//                     SIGN UP
-//                 </a>
-//             </li>
-//         </ul>
-//     </div>
-// `;
-
-
-//     } else {
-//         nav.removeClass("navbar navbar-expand-md bg-dark navbar-dark");
-//         document.getElementById("top").innerHTML = `    
-//             <img class="logo" src="./images/logo.png">
-//             <ul>
-
-//                 <li>
-//                     <a href="#container2" id="link">
-//                         FOOD DELIVERY
-//                     </a>
-//                 </li>
-//                 <li>
-//                     <a href="#container3" id="link">
-//                         HOW IT WORKS
-//                     </a>
-//                 </li>
-//                 <li>
-//                     <a href="#container4" id="link">
-//                         OUR CITIES
-//                     </a>
-//                 </li>
-//                 <li>
-//                     <a href="#container6" id="link">
-//                         SIGN UP
-//                     </a>
-//                 </li>
-//             </ul>
-//         `;
-
-
-//     }
-// });
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
@@ -111,28 +47,12 @@ $(document).on("scroll", function () {
         var logo = $(".logo");
 
         var collapse = $(".normal");
-
-        // ul.css({
-        //     "background-color": "black",
-        //     "width": "100%",
-        //     "position": "fixed",
-        //     "z-index": "1000000"
-        // });
         var link = $('#link');
-        // link.css({
-        //     "color": "white"
-        // })
-
-        // document.getElementById("link").css({
-        //     "color": "black",
-        // })
         ul.addClass("b");
         link.addClass("a");
         logo.addClass("c");
         collapse.addClass("collapse");
 
-        // ul.setAttribute("style", "background-color:white", "width:100%");
-        // link.setAttribute("style", "color:black");
     }
     else {
         var ul = $("#top");
@@ -175,12 +95,27 @@ $(document).on("scroll", function () {
         city4.addClass("animated fadeIn")
     }
     if (isScrolledIntoView(sign1, $window)) {
+        s1 = true;
         sign1.addClass("animated pulse")
     }
-    if (isScrolledIntoView(sign2, $window)) {
-        sign2.addClass("animated pulse")
-        sign3.addClass("animated pulse")
+    console.log(s1);
+    if (s1) {
+        // console.log(s1);
+        if (isScrolledIntoView(sign2, $window)) {
+            s2 = true;
+            sign2.addClass("animated pulse")
+            // sign3.addClass("animated pulse")
+        }
     }
+    // console.log(s2)
+
+    if (s2) {
+        // console.log(s2)
+        if (isScrolledIntoView(sign3, $window)) {
+            sign3.addClass("animated pulse")
+        }
+    }
+
 
     if (isScrolledIntoView(rev1, $window)) {
         rev1.addClass("animated fadeInUp")

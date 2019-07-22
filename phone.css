@@ -176,7 +176,7 @@ transition: transform 0.5s;
    .logo-md{
     display: inline-block;
     float: right;
-    width: 15%;
+    width: 100px;
     margin-right: 5%;
 }
    label{
@@ -203,7 +203,7 @@ width: 100%;
        padding: 0 2rem;
    }
    #sign1,#sign2,#sign3{
-       margin: 6% -10%;
+       margin: 6% 0%;
        width: 20rem;
    }
    #image{
@@ -217,7 +217,9 @@ width: 100%;
    #london, #sc, #berlin, #lisbon{
        height: 10rem;
        width: 20rem;
-       padding-right:20px;
+       /* padding-right:20px; */
+       padding-left: 6%;
+       margin-right: 2%;
    }
    #city1, #city2, #city3, #city4 {
        padding-left: 1rem;
