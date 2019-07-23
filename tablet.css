@@ -11,6 +11,10 @@
     #cols1 div{
         text-align: left;
     }
+    #text1{
+    padding-top: 31%;
+    font-size: 2rem;
+}
   #line1, #line2, #line3 {
     margin-top: 1rem;
     padding-right: 2rem;
