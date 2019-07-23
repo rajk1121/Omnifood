@@ -1,4 +1,4 @@
-@media only screen and (max-width: 414px){
+@media only screen and (max-width:414px){
     
     ul{
         margin-right: 0rem;
@@ -203,7 +203,7 @@ width: 100%;
        padding: 0 2rem;
    }
    #sign1,#sign2,#sign3{
-       /* margin: 17px -3px; */
+       margin: 6% 0%;
        width: 100%;
    }
    #image{
@@ -219,11 +219,11 @@ width: 100%;
        width: 100%;
        /* padding-right:20px; */
        /* padding-left: 6%; */
-       margin-right: 2%;
+       /* margin-right: 2%; */
    }
    #city1, #city2, #city3, #city4 {
-       /* padding-left: 1rem; */
-       /* margin: 0rem; */
+       padding-left: 1rem;
+       margin: 0rem;
        width: 100%;
    }
    #citycont section{
@@ -312,6 +312,6 @@ width: 100%;
 }
 #social-media{
     /* justify-content: flex-end; */
-    margin-left: 25%;
+padding-left: 81%
 }
 }
