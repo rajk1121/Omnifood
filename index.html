@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link href="./style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./tablet.css">
     <link rel="stylesheet" href="./phone.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -17,6 +19,7 @@
 </head>
 
 <body>
+
     <div id="container">
         <!-- <nav id="md">
             <img class="logo-md" src="./images/logo.png">
@@ -39,7 +42,9 @@
             <a href="#container6" onclick="closeNav()">SIGN UP</a>
         </div>
         <nav class="normal">
-            <a href="javascript:void(0)" class="opn-btn" onclick="openNav()"><i class="fas fa-3x fa-toggle-on"></i></a>
+            <a href="javascript:void(0)" class="opn-btn" onclick="openNav()">
+                <i style="color: white" class="fas fa-3x fa-bars"></i>
+            </a>
             <img class="logo-md" src="./images/logo.png">
         </nav>
 
@@ -152,54 +157,84 @@
         </div>
 
     </div>
-    <!-- Choose the subscription plan that best suits your
-    needs and sign up today.
-    Order your delicious meal using our mobile
-    app or website. Or you van even call us!.
-    Enjoy your meal after less than 20 minutes. See you next
-    time!. -->
+
     <div id="f-i" class="food-items">
 
-        <section>
+        <section data-toggle='modal' data-target='#food1'>
             <div class="food1">
                 <div class="foods"></div>
             </div>
         </section>
-        <section>
+        <section data-toggle='modal' data-target='#food2'>
             <div class="food2">
                 <div class="foods"></div>
             </div>
         </section>
-        <section>
+        <section data-toggle='modal' data-target='#food3'>
             <div class="food3">
                 <div class="foods"></div>
             </div>
         </section>
-        <section>
+        <section data-toggle='modal' data-target='#food4'>
             <div class="food4">
                 <div class="foods"></div>
             </div>
         </section>
-        <section>
+        <section data-toggle='modal' data-target='#food5'>
             <div class="food5">
                 <div class="foods"></div>
             </div>
         </section>
-        <section>
+        <section data-toggle='modal' data-target='#food6'>
             <div class="food6">
                 <div class="foods"></div>
             </div>
         </section>
-        <section>
+        <section data-toggle='modal' data-target='#food7'>
             <div class="food7">
                 <div class="foods"></div>
             </div>
         </section>
-        <section>
+        <section data-toggle='modal' data-target='#food8'>
             <div class="food8">
                 <div class="foods"></div>
             </div>
         </section>
+        <div class="modal" id="food1" style="display: none;" aria-hidden="true">
+            <img src="./images/1.jpg" alt="">
+        </div>
+        <div class="modal" id="food2" style="display: none;" aria-hidden="true">
+            <img src="./images/2.jpg" alt="">
+        </div>
+        <div class="modal" id="food3" style="display: none;" aria-hidden="true">
+            <img src="./images/3.jpg" alt="">
+        </div>
+        <div class="modal" id="food4" style="display: none;" aria-hidden="true">
+            <img src="./images/4.jpg" alt="">
+        </div>
+        <div class="modal" id="food5" style="display: none;" aria-hidden="true">
+            <img src="./images/5.jpg" alt="">
+        </div>
+
+        <div class="modal" id="food6" style="display: none;" aria-hidden="true">
+            <img src="./images/6.jpg" alt="">
+        </div>
+        <div class="modal" id="food7" style="display: none;" aria-hidden="true">
+            <img src="./images/7.jpg" alt="">
+        </div>
+        <div class="modal" id="food8" style="display: none;" aria-hidden="true">
+            <img src="./images/8.jpg" alt="">
+        </div>
+
+
+        <!-- <img id="food1" src="./images/1.jpg" alt="" class="modal">
+        <img id="food2" src="./images/2.jpg" alt="" class="modal">
+        <img id="food3" src="./images/3.jpg" alt="" class="modal">
+        <img id="food4" src="./images/4.jpg" alt="" class="modal">
+        <img id="food5" src="./images/5.jpg" alt="" class="modal">
+        <img id="food6" src="./images/6.jpg" alt="" class="modal">
+        <img id="food7" src="./images/7.jpg" alt="" class="modal">
+        <img id="food8" src="./images/8.jpg" alt="" class="modal"> -->
 
 
     </div>

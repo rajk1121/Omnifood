@@ -51,7 +51,7 @@ $(document).on("scroll", function () {
         ul.addClass("b");
         link.addClass("a");
         logo.addClass("c");
-        collapse.addClass("collapse");
+        collapse.addClass("colla");
 
     }
     else {
@@ -63,7 +63,7 @@ $(document).on("scroll", function () {
         logo.removeClass("c");
 
         var collapse = $(".normal");
-        collapse.removeClass("collapse");
+        collapse.removeClass("colla");
 
     }
 

@@ -50,7 +50,14 @@
     /* background-color: pink; */
 
 }
-.collapse{
+.modal img{
+    position: absolute;
+    left: 0%;
+    top:30%;
+    width: 100%;
+   
+}
+.colla{
     position: fixed;
     z-index: 45000000;
      background-color: pink;
@@ -219,7 +226,7 @@ width: 100%;
        width: 100%;
        /* padding-right:20px; */
        /* padding-left: 6%; */
-       /* margin-right: 2%; */
+       padding-right: 3%;
    }
    #city1, #city2, #city3, #city4 {
        padding-left: 1rem;

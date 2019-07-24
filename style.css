@@ -20,7 +20,7 @@ html{
 .sidenav{
     display: none;
 }
-.collapse{
+.colla{
     z-index: 45000000;
     position: fixed;
 }
@@ -76,11 +76,17 @@ html{
  
     height: 100vh;
 }
+.modal img{
+    position: absolute;
+    left: 20%;
+   
+    top:10%;
+}
 h2{
-    font-weight: normal;
-    text-align: center;
+    font-weight: normal !important;
+    text-align: center !important;
     /* margin-top: 3rem; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 h2:after{
     background-color: brown;
@@ -160,7 +166,7 @@ color: pink;
 #text1{
     color: WHITE;
     font-family: Lato,Arial, Helvetica, sans-serif;
-    padding-top: 31%;
+    padding-top: 15%;
     margin-left: 15vw;
     margin-bottom: 2rem;
     font-size: 2.5rem;
