@@ -48,6 +48,9 @@ $(document).on("scroll", function () {
 
         var collapse = $(".normal");
         var link = $('#link');
+        var img = $('.logo-md');
+        img.addClass('coll-img');
+        img.removeClass('logo-md')
         ul.addClass("b");
         link.addClass("a");
         logo.addClass("c");
@@ -55,6 +58,10 @@ $(document).on("scroll", function () {
 
     }
     else {
+
+        var img = $('.coll-img');
+        img.addClass('logo-md');
+        img.removeClass('coll-img')
         var ul = $("#top");
         ul.removeClass("b");
         var link = $('#link');

@@ -38,6 +38,11 @@
   transition: 0.3s;
 }
 
+
+h2{
+    margin: 2rem !important;
+}
+
 .opn-btn{
     display: inline-block;
     
@@ -56,6 +61,13 @@
     top:30%;
     width: 100%;
    
+}
+.coll-img{
+    /* display: inline-block; */
+    position: absolute;
+    width:20%;;
+    top: 2px;
+    right: 20px;
 }
 .colla{
     position: fixed;

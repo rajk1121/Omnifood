@@ -52,7 +52,9 @@
 .opn-btn{
     display: inline-block;
 }
-
+h2{
+    margin: 2rem;
+}
 
 .opn-btn-fixed{
     position: fixed;
@@ -64,6 +66,13 @@
     float: right;
     width: 100px;
     margin-right: 5%;
+}
+.coll-img{
+    /* display: inline-block; */
+    position: absolute;
+    width:20%;;
+    top: 2px;
+    right: 20px;
 }
 .modal img{
     position: absolute;
