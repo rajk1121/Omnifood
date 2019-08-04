@@ -25,6 +25,9 @@ overflow-y: scroll;
 .sidenav{
     display: none;
 }
+.coll-img{
+    width: 0%;
+}
 .colla{
     z-index: 45000000;
     position: fixed;
